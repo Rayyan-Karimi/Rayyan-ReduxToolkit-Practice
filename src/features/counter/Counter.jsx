@@ -9,18 +9,16 @@ import {
 import { useState } from "react";
 
 const Counter = () => {
-  const [amount, setAmount] = useState(null);
+  const count = useSelector((state) => state.counterzzz.count);
+  const dispatch = useDispatch();
 
+  const [amount, setAmount] = useState(0);
   const amountValue = Number(amount) || 0;
 
-  const resetAll = () => {
-    setAmount(null);
+  const handleResetAll = () => {
+    setAmount(0);
     dispatch(reset());
   };
-
-  const count = useSelector((state) => state.counter.count);
-
-  const dispatch = useDispatch();
 
   return (
     <section className="flex flex-col items-center gap-8">
@@ -59,7 +57,7 @@ const Counter = () => {
         >
           -
         </button>
-        <button className="border-2 px-2 font-bold " onClick={resetAll}>
+        <button className="border-2 px-2 font-bold " onClick={handleResetAll}>
           Reset
         </button>
       </div>
