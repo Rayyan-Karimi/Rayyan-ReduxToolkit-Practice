@@ -1,4 +1,9 @@
-# Project using Vite
+
+# 1. Rayyan-ReduxToolkit-Practice
+1. npm i @reduxjs/toolkit react-redux
+
+- - -
+# 2. Project using Vite
 - `mkdir my-vite-react-app`
 - `cd my-vite-react-app`
 - `npm create vite@latest 'AppName'`
@@ -24,12 +29,10 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-# Setup using React 18
+# 3. Setup using React 18 (optional)
 - `npx create-react-app react-tutorial --use-npm`
 - `cd react-tutorial`
 - `npm install react@18 react-dom@18`
 - `npm install web-vitals antd`
 - `npm start`
 
-
-# Rayyan-ReduxToolkit-Practice
