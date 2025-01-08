@@ -9,12 +9,12 @@ import {
 import { useState } from "react";
 
 const Counter = () => {
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState(null);
 
   const amountValue = Number(amount) || 0;
 
   const resetAll = () => {
-    setAmount(0);
+    setAmount(null);
     dispatch(reset());
   };
 
